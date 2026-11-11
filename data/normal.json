@@ -1,0 +1,73 @@
+{
+  "tree": [
+    {
+      "id": "all",
+      "parent": null
+    },
+    {
+      "id": "east",
+      "parent": "all"
+    },
+    {
+      "id": "west",
+      "parent": "all"
+    },
+    {
+      "id": "east-early",
+      "parent": "east"
+    },
+    {
+      "id": "east-late",
+      "parent": "east"
+    },
+    {
+      "id": "west-early",
+      "parent": "west"
+    },
+    {
+      "id": "west-late",
+      "parent": "west"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "e0",
+      "subject_id": "p1",
+      "event_day": 1,
+      "leaf": "east-early"
+    },
+    {
+      "event_id": "e1",
+      "subject_id": "p1",
+      "event_day": 2,
+      "leaf": "east-late"
+    },
+    {
+      "event_id": "e2",
+      "subject_id": "p2",
+      "event_day": 1,
+      "leaf": "east-early"
+    },
+    {
+      "event_id": "e3",
+      "subject_id": "p3",
+      "event_day": 3,
+      "leaf": "west-late"
+    }
+  ],
+  "epsilon_by_depth": [
+    "1/5",
+    "2/5",
+    "2/5"
+  ],
+  "privacy_scope": "synthetic-cohort",
+  "dataset_version": "v1",
+  "release_id": "release-1",
+  "scope_budget": "2",
+  "mode": "demonstration",
+  "demo_seed": 217,
+  "solver": {
+    "tolerance": 1e-08,
+    "max_iterations": 10000
+  }
+}

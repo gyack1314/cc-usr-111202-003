@@ -1,0 +1,7 @@
+# 分层汇总资料
+
+tree是公开的有根树，每个叶节点深度相同，depth从根0开始。epsilon_by_depth与树深度对应，分数字符串表示精确预算，不使用二进制浮点累加判断超支。每人的贡献选择按(event_day,event_id)升序取第一条，不按类别或事件结果决定排序。叶类即使无人出现仍存在于公开tree。
+
+privacy_scope覆盖固定合成人群；dataset_version只标资料版本，不重置scope_budget。release_id是scope内幂等业务身份。演示模式与正式发布模式属于不同输出类别，demo_seed仅在明确的demonstration材料中使用。账本的输出回执不含原始记录。
+
+当前domain核对树和叶引用，给出原始资料人数及事件数；这些原始摘要供本地维护，不能当作加噪发布结果。

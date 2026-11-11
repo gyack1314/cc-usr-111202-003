@@ -1,0 +1,48 @@
+{
+  "tree": [
+    {
+      "id": "all",
+      "parent": null
+    },
+    {
+      "id": "east",
+      "parent": "all"
+    },
+    {
+      "id": "west",
+      "parent": "all"
+    },
+    {
+      "id": "east-early",
+      "parent": "east"
+    },
+    {
+      "id": "east-late",
+      "parent": "east"
+    },
+    {
+      "id": "west-early",
+      "parent": "west"
+    },
+    {
+      "id": "west-late",
+      "parent": "west"
+    }
+  ],
+  "events": [],
+  "epsilon_by_depth": [
+    "1/5",
+    "2/5",
+    "2/5"
+  ],
+  "privacy_scope": "synthetic-cohort",
+  "dataset_version": "v1",
+  "release_id": "release-1",
+  "scope_budget": "2",
+  "mode": "demonstration",
+  "demo_seed": 217,
+  "solver": {
+    "tolerance": 1e-08,
+    "max_iterations": 10000
+  }
+}
